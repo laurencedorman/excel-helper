@@ -1,0 +1,14 @@
+#output[disabled] {
+  cursor: text;
+}
+
+.form-control {
+}
+
+#output {
+  font-family: monospace;
+}
+
+#extra {
+  float: right;
+}

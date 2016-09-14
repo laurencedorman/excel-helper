@@ -1,0 +1,18 @@
+{
+  "name": "excel-helper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "deploy": "gh-pages ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitub.com/ld0rman/excel-helper"
+  },
+  "author": "ld0rman",
+  "license": "ISC",
+  "devDependencies": {
+    "gh-pages": "^0.11.0"
+  }
+}

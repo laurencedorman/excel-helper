@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Excel Helper</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+
+      <div class="starter-template">
+        <h1>Excel Helper</h1>
+        <p class="lead"></p>
+      </div>
+
+      <form>
+        <div class="form-group">
+          <label for="saisie">Saisie</label>
+          <textarea class="form-control" id="input" autofocus rows="5" placeholder="Coller le contenu Excel ici"></textarea>
+        </div>
+        <div class="form-group">
+          <form class="form-inline">
+            <div class="form-group">
+              <label for="">Mode de conversion</label>
+              <div class="btn-group" id="mode">
+                <button type="button" data-mode="text" class="btn btn-default">Texte avec guillemets</button>
+                <button type="button" data-mode="number" class="btn btn-default">Chiffres FR en EN</button>
+              </div>
+              <div class="btn-group" id="extra">
+                <button type="button" id="relaunch" class="btn btn-primary">Relancer</button>
+                <button type="button" id="empty-input" class="btn btn-danger">Vider la saisie</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="form-group">
+          <label for="ouput">Résultat</label>
+          <textarea disabled class="form-control" id="output" rows="5">hi there</textarea>
+        </div>
+      </form>
+    </div><!-- /.container -->
+
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
