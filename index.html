@@ -41,13 +41,20 @@
         </div>
         <div class="form-group">
           <label for="ouput">Résultat</label>
-          <textarea class="form-control" id="output" rows="8" placeholder="Le texte formatté s'affichera ici"></textarea>
+          <textarea readonly class="form-control" id="output" rows="8" placeholder="Le texte formatté s'affichera ici"></textarea>
+        </div>
+        <div class="form-group">
+          <button type="button" id="copy" data-clipboard-target="#output" class="btn btn-primary">Copier dans la presse papiers</button>
         </div>
       </form>
     </div><!-- /.container -->
 
 
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.12/clipboard.min.js"></script>
+    <script>
+      new Clipboard('#copy');
+    </script>
     <script src="script.js"></script>
 </body>
 
